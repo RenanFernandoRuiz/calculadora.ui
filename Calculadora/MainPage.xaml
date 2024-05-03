@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="10"
+            >
+
+
+
+            <Label
+                Text=""
+                HeightRequest="82"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+
+            <HorizontalStackLayout>
+                <Button
+                x:Name="CounterBtn"
+                Text="AC" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                Margin="10"
+                HeightRequest="70"
+                WidthRequest="70"
+                FontSize="Large"
+                BackgroundColor="LightGray"
+                FontFamily="Bold"
+                
+                 />
+
+                <Button
+                x:Name="CounterBtn2"
+                Text="( )" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                Margin="10"
+                HeightRequest="70"
+                WidthRequest="70"
+                FontSize="Large"
+                BackgroundColor="LightGray"
+                FontFamily="Bold"
+                   />
+
+
+                <Button
+             x:Name="CounterBtn3"
+             Text="%" 
+             SemanticProperties.Hint="Counts the number of times you click"
+             Clicked="OnCounterClicked"
+             HorizontalOptions="Fill"
+             Margin="10"
+             HeightRequest="70"
+             WidthRequest="70"
+             FontSize="Large"
+             BackgroundColor="LightGray"
+             FontFamily="Bold"
+             />
+
+                <Button
+             x:Name="CounterBtn4"
+             Text="÷" 
+             SemanticProperties.Hint="Counts the number of times you click"
+             Clicked="OnCounterClicked"
+             HorizontalOptions="Fill"
+             FontSize="Title"
+             BackgroundColor="Orange"
+             Margin="10"
+             HeightRequest="80"
+             WidthRequest="70"
+             FontFamily="Bold"
+             
+             />
+
+            </HorizontalStackLayout>
+
+
+
+
+
+
+
+            <HorizontalStackLayout>
+                <Button
+                x:Name="CounterBtn5"
+                Text="7" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                Margin="10"
+                HeightRequest="70"
+                WidthRequest="70"
+                FontSize="Large"
+                TextColor="White"
+                BackgroundColor="Gray"
+                FontFamily="Bold"
+                
+                 />
+
+                <Button
+                x:Name="CounterBtn6"
+                Text="8" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                Margin="10"
+                HeightRequest="70"
+                WidthRequest="70"
+                FontSize="Large"
+                TextColor="White"
+                BackgroundColor="Gray"
+                 FontFamily="Bold"
+                   
+                   />
+
+
+                <Button
+                x:Name="CounterBtn7"
+                Text="9" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                Margin="10"
+                HeightRequest="70"
+                WidthRequest="70"
+                FontSize="Large"
+                TextColor="White"
+                BackgroundColor="Gray"
+                FontFamily="Bold"
+             />
+
+                <Button
+                x:Name="CounterBtn8"
+                Text="X" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                FontSize="Title"
+                BackgroundColor="Orange"
+                Margin="10"
+                HeightRequest="80"
+                WidthRequest="70"
+                FontFamily="Bold"
+               
+                />
+
+            </HorizontalStackLayout>
+
+
+
+
+
+
+            <HorizontalStackLayout>
+                <Button
+                x:Name="CounterBtn9"
+                Text="4" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                Margin="10"
+                HeightRequest="70"
+                WidthRequest="70"
+                FontSize="Large"
+                TextColor="White"
+                BackgroundColor="Gray"
+                FontFamily="Bold"
+                
+                 />
+
+                <Button
+                x:Name="CounterBtn10"
+                Text="5" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                Margin="10"
+                HeightRequest="70"
+                WidthRequest="70"
+                FontSize="Large"
+                TextColor="White"
+                BackgroundColor="Gray"
+                 FontFamily="Bold"
+                   
+                   
+                 />
+                <Button
+                x:Name="CounterBtn11"
+                Text="6" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                Margin="10"
+                HeightRequest="70"
+                WidthRequest="70"
+                FontSize="Large"
+                TextColor="White"
+                BackgroundColor="Gray"
+                FontFamily="Bold"
+             />
+
+                <Button
+                x:Name="CounterBtn12"
+                Text="-" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                FontSize="Title"
+                BackgroundColor="Orange"
+                Margin="10"
+                HeightRequest="80"
+                WidthRequest="70"
+                FontFamily="Bold"
+               
+                />
+
+            </HorizontalStackLayout>
+
+
+
+
+            <HorizontalStackLayout>
+                <Button
+                x:Name="CounterBtn13"
+                Text="1" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                Margin="10"
+                HeightRequest="70"
+                WidthRequest="70"
+                FontSize="Large"
+                TextColor="White"
+                BackgroundColor="Gray"
+                FontFamily="Bold"
+                
+                 />
+
+                <Button
+                x:Name="CounterBtn14"
+                Text="2" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                Margin="10"
+                HeightRequest="70"
+                WidthRequest="70"
+                FontSize="Large"
+                TextColor="White"
+                BackgroundColor="Gray"
+                FontFamily="Bold"
+                    />
+
+
+                <Button
+                x:Name="CounterBtn15"
+                Text="3" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                Margin="10"
+                HeightRequest="70"
+                WidthRequest="70"
+                FontSize="Large"
+                TextColor="White"
+                BackgroundColor="Gray"
+                FontFamily="Bold"
+             />
+
+                <Button
+                x:Name="CounterBtn16"
+                Text="+" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                FontSize="Title"
+                BackgroundColor="Orange"
+                Margin="10"
+                HeightRequest="80"
+                WidthRequest="70"
+                FontFamily="Bold"
+               
+                 />
+
+            </HorizontalStackLayout>
+
+
+
+
+
+            <HorizontalStackLayout>
+                <Button
+                x:Name="CounterBtn17"
+                Text="0" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                Margin="10"
+                HeightRequest="70"
+                WidthRequest="70"
+                FontSize="Large"
+                TextColor="White"
+                BackgroundColor="Gray"
+                 FontFamily="Bold"
+                
+                 />
+
+                <Button
+                x:Name="CounterBtn18"
+                Text="." 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                Margin="10"
+                HeightRequest="70"
+                WidthRequest="70"
+                FontSize="Large"
+                TextColor="White"
+                BackgroundColor="Gray"
+                 FontFamily="Bold"
+                   
+                   
+                 />
+
+
+                <Button
+               x:Name="CounterBtn19"
+              Text=" ⌫" 
+               SemanticProperties.Hint="Counts the number of times you click"
+             Clicked="OnCounterClicked"
+             HorizontalOptions="Fill"
+             Margin="10"
+             HeightRequest="70"
+             WidthRequest="70"
+            FontSize="Large"
+            TextColor="White"
+            BackgroundColor="Gray"
+            FontFamily="Bold"
+     
+     
+   />
+
+
+                <Button
+                x:Name="CounterBtn20"
+                Text="=" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                FontSize="Title"
+                BackgroundColor="orange"
+                Margin="10"
+                HeightRequest="80"
+                WidthRequest="70"
+                FontFamily="Bold"
+               
+                />
+
+            </HorizontalStackLayout>
+
+
+
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
